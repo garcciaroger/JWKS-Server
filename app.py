@@ -7,8 +7,6 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 
 app = Flask(__name__)
 
-# For demonstration purposes, generating a new RSA key pair on startup.
-# In a real application, you'd likely load this from secure storage.
 private_key = rsa.generate_private_key(
     public_exponent=65537,
     key_size=2048,
@@ -30,7 +28,6 @@ public_pem = public_key.public_bytes(
     format=serialization.PublicFormat.SubjectPublicKeyInfo
 )
 
-# Dummy Key ID for demonstration
 key_id = "mykey1"
 
 
@@ -51,9 +48,6 @@ def authenticate():
 
 @app.route('/jwks', methods=['GET'])
 def jwks():
-    # For simplicity, returning a static key. In a real app, query your key storage.
-    # Convert the RSA public key to JWKS format
-    # Note: You'll need to convert the RSA public key to the specific values needed by JWKS
     jwks = {
         "keys": [
             {
@@ -61,7 +55,6 @@ def jwks():
                 "use": "sig",
                 "kid": key_id,
                 "alg": "RS256",
-                # These values need to be actual RSA public key components (n and e) in base64 format
                 "n": "public_key_part_n",
                 "e": "public_key_part_e"
             }
