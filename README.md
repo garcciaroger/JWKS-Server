@@ -11,7 +11,7 @@ The JWKS Server is a RESTful service developed using Python and Flask, along wit
 
 ### Clone the Repository
 
-To get started, clone the repository to your local machine:
+Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/yourusername/jwks-server.git
@@ -20,7 +20,7 @@ cd jwks-server
 
 ### Set Up a Virtual Environment (Optional)
 
-For a cleaner setup, you can create and activate a virtual environment:
+ You can create and activate a virtual environment:
 
 ```bash
 python3 -m venv venv
