@@ -2,6 +2,7 @@ JWKS Server - Introduction
 The JWKS-Server is a RESTful service developed using Python and Flask. It is designed to provide public keys with unique identifiers (kid) that can be used for verifying JSON Web Tokens (JWTs). This server implements key expiry for enhanced security, includes an authentication endpoint, and handles the issuance of JWTs, including those with expired keys based on a query parameter. 
 
 Prerequisites
+
 Python 3.6 or higher installed on your system
 pip for installing Python packages
 Installation
