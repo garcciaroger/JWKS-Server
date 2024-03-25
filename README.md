@@ -17,14 +17,11 @@ To get started, clone the repository to your local machine:
 git clone https://github.com/yourusername/jwks-server.git
 cd jwks-server
 
-
-
 python3 -m venv venv
 # On Unix/Linux/Mac:
 source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
-
 
 pip install Flask cryptography pyjwt
 
