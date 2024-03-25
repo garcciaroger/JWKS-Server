@@ -45,3 +45,6 @@ To launch the JWKS Server, navigate to the project directory and run:
 ```bash
 python app.py
 ```
+
+
+NOTE - Gradebot was runned on CSCE3550_Linux_arm64
