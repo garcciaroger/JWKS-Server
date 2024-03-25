@@ -22,16 +22,19 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 Install Dependencies
+
 With your virtual environment activated, install the project dependencies:
 pip install Flask cryptography pyjwt
 
 Running the Project
+
 To run the JWKS-Server, navigate to the project directory and execute the following command:
 
 python app.py
 This command starts the Flask development server, and the JWKS-Server will be accessible at http://127.0.0.1:8080.
 
 Usage
+
 Authentication Endpoint
 To issue a JWT, make a POST request to the /auth endpoint. You can specify if you want an expired token by including the expired query parameter:
 
